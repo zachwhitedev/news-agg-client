@@ -1,0 +1,19 @@
+{
+    "statusCode": 200,
+    "articles": [
+        {
+            "author": "Ed Yong",
+            "url": "https://www.atlantic.com/the-virus-sucks",
+            "source": "atlantic",
+            "title": "10 Reasons Why This Virus Sucks",
+            "date": "4/27/2020"
+        },
+        {
+            "author": "Bill McBride",
+            "url": "https://www.calculatedriskblog.com/the-virus-sucks",
+            "source": "calc",
+            "title": "Buy TESLA Tendies",
+            "date": "4/21/2020"
+        }
+    ]
+}
