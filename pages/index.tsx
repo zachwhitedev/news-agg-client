@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 import Nav from '../components/Nav';
+import Feed from '../components/Feed';
 
 import '../assets/styles/main.scss';
 
@@ -23,10 +24,7 @@ function Home(props: HomeProps): JSX.Element {
   return (
     <>
       <Nav />
-      <h1>Home page</h1>
-      <Link href='/about' as='/about'>
-        <a>About</a>
-      </Link>
+      <Feed />
     </>
   );
 }
