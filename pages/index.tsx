@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
+import Nav from '../components/Nav';
 
 import '../assets/styles/main.scss';
 
@@ -15,28 +16,13 @@ function Home(props: HomeProps): JSX.Element {
   })
   
   useEffect(() => {
-    if(localStorage.getItem('userid')){
-      axios.get(`https://petersapi.com/userauthor/${localStorage.getItem('userid')}`)
-        .then(res => {
-          setState({
-            ...state,
-            authors: res.data.authors
-          })
-          const userauthors = res.data.authors;
-          axios.post('https://petersapi.com/getposts', userauthors)
-          .then(res => {
-            setState({
-              ...state,
-              articles: res.data.articles
-            })
-          })
-        })
-    }
+    console.log('yo')
   }, [])
 
 
   return (
     <>
+      <Nav />
       <h1>Home page</h1>
       <Link href='/about' as='/about'>
         <a>About</a>

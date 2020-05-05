@@ -1,0 +1,22 @@
+.nav {
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+
+        img {
+            max-height: 65px;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 0 3px rgb(169, 169, 169);
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+
+}
